@@ -55,4 +55,6 @@ for line in file:
         os.system("dyokey " + filename)
     elif 'jmp:' in code[string]:
         os.system("dyokey " + line[4:])
+    elif 'sys:' in code[string]:
+        os.system(line[4:])
     string += 1
